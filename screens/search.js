@@ -42,6 +42,7 @@ class Search extends React.PureComponent{
                         data={this.state.searchData} 
                         numColumns={3}
                         renderItem={({item})=><Card navigation ={this.state.navigation}  item={item} />}
+                        keyExtractor={item=>item.id}
                     /> )}
                     {this.state.searchData!=null && this.state.searchData.length <=0 &&(
                         <Text>No Result Found</Text>

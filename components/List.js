@@ -12,6 +12,7 @@ class List extends React.PureComponent{
                         data={content} 
                         horizontal
                         renderItem={({item})=><Card navigation ={this.props.navigation }  item={item} />}
+                        keyExtractor={item=>item.id}
                     /> 
             </View>
         )
